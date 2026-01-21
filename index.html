@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explorando la Prehistoria | Guía Educativa</title>
+    <style>
+        /* Estilos Generales */
+        :root {
+            --color-primario: #5d4037;
+            --color-secundario: #d7ccc8;
+            --color-acento: #f4511e;
+            --texto: #333;
+            --blanco: #ffffff;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            color: var(--texto);
+            background-color: #f4f1ea;
+        }
+
+        header {
+            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), 
+                        url('https://images.unsplash.com') center/cover;
+            color: white;
+            padding: 100px 20px;
+            text-align: center;
+        }
+
+        nav {
+            background: var(--color-primario);
+            padding: 1rem;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+
+        .contenedor {
+            max-width: 1100px;
+            margin: 20px auto;
+            padding: 0 20px;
+        }
+
+        /* Secciones */
+        section {
+            padding: 40px 0;
+            border-bottom: 1px solid #ddd;
+        }
+
+        h2 {
+            color: var(--color-primario);
+            border-left: 5px solid var(--color-acento);
+            padding-left: 10px;
+        }
+
+        /* Galería Responsiva */
+        .galeria {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .galeria-item {
+            background: var(--blanco);
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+
+        .galeria-item:hover {
+            transform: scale(1.03);
+        }
+
+        .galeria-item img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .galeria-item p {
+            padding: 15px;
+            font-size: 0.9rem;
+            text-align: center;
+        }
+
+        /* Footer */
+        footer {
+            background: var(--color-primario);
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 40px;
+        }
+
+        /* Media Queries */
+        @media (max-width: 600px) {
+            header { padding: 50px 10px; }
+            nav a { display: block; margin: 10px 0; text-align: center; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>LA PREHISTORIA</h1>
+        <p>El amanecer de la humanidad y sus primeras herramientas</p>
+    </header>
+
+    <nav>
+        <a href="#paleolitico">Paleolítico</a>
+        <a href="#neolitico">Neolítico</a>
+        <a href="#metales">Edad de los Metales</a>
+        <a href="#galeria">Galería</a>
+    </nav>
+
+    <div class="contenedor">
+        
+        <section id="paleolitico">
+            <h2>El Paleolítico (Edad de Piedra Antigua)</h2>
+            <p>Es la etapa más larga de la historia humana. Durante este periodo, los seres humanos eran nómadas, vivían de la caza y la recolección, y comenzaron a dominar el fuego. Las herramientas se fabricaban principalmente golpeando piedras para darles forma.</p>
+        </section>
+
+        <section id="neolitico">
+            <h2>El Neolítico (Edad de Piedra Nueva)</h2>
+            <p>Marcó un cambio revolucionario: la invención de la agricultura y la ganadería. Los humanos se volvieron sedentarios, aparecieron los primeros poblados y se perfeccionó la técnica de la piedra pulida y la cerámica.</p>
+        </section>
+
+        <section id="galeria">
+            <h2>Galería de la Prehistoria</h2>
+            <div class="galeria">
+                <div class="galeria-item">
+                    <img src="https://images.unsplash.com" alt="Pinturas rupestres">
+                    <p>Pinturas Rupestres: Las primeras expresiones artísticas en cuevas.</p>
+                </div>
+                <div class="galeria-item">
+                    <img src="https://images.unsplash.com" alt="Herramientas de piedra">
+                    <p>Herramientas: Hachas de mano y puntas de flecha talladas.</p>
+                </div>
+                <div class="galeria-item">
+                    <img src="https://images.unsplash.com" alt="Stonehenge">
+                    <p>Megalitismo: Construcciones con grandes bloques de piedra.</p>
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Portal Educativo de la Prehistoria - Aprende sobre nuestro origen</p>
+    </footer>
+
+</body>
+</html>
